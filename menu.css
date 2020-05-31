@@ -14,6 +14,7 @@ body{
     justify-content: center;
 }
 
+/*---- invis toggler box ----*/
 .menu-wrap .toggler{
     position: fixed;
     top:89%;
@@ -25,6 +26,7 @@ body{
     opacity: 0;
 }
 
+/*---- circle with hamburger lines in it ----*/
 .menu-wrap .hamburger{
     position: fixed;
     border-radius: 50%;
@@ -34,11 +36,11 @@ body{
     width: 50px;
     height: 50px;
     padding: 1px;
-    background: rgba(42, 42, 42, 0.75);
+    background: rgba(91,42,42,.90);
     display: flex;
     align-items: center;
     align-content: center;
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0);
     
 }
 
@@ -90,6 +92,8 @@ body{
     transform:rotate(225deg);
 }
 
+
+/*---- main menu ----*/
 .menu-wrap .menu{
     position: fixed;
     left: 1;
@@ -103,19 +107,20 @@ body{
     align-items: center;
     justify-content: center;
     border-radius: 2%;
+    
 
 }
-
 .menu-wrap .menu > div{
     background: rgba(53, 69, 49, 0.90);
     width: 100%;
-    height: 100%;
+    height: 80%;
     display: flex;
     flex: none;
     align-items: center;
     justify-content: center;
     transform: scale(0);
     transition: all 0.4s ease;
+    border-radius: 3%;
 
 }
 .menu-wrap .menu > div > div{
@@ -126,22 +131,25 @@ body{
     transition: opacity .4s ease;
     margin-left: -5%;
     
+    
 
 }
-
 .menu-wrap .menu > div > div > ul> li{
     list-style: none;
     color: white;
-    font-size: 160%;
-    padding-bottom: 10%;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.75);;
+    font-size: 200%;
+    padding-top: 8%;
+    padding-bottom: 6%;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.75);
+    margin-left: -10%;
+    
 }
-
 .menu-wrap .menu > div > div > ul> li >a{
     color: inherit;
     text-decoration: none;
     transition: color 0.4s ease;
 }
+
 
 /* Show menu */
 .menu-wrap .toggler:checked ~ .menu{
