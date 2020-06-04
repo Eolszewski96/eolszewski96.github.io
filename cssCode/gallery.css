@@ -1,6 +1,6 @@
 /*---- whole body section ----*/
 .gallery-body{
-    background-image: url("galleryBackground.jpg");
+    background-image: url("backgrounds/galleryBackground.jpg");
     height: inherit;
     text-align: center;
     align-items: center;

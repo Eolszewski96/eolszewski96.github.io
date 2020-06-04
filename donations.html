@@ -2,21 +2,40 @@
     <meta charse="utf-8">
     <title>SafeHaven</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="X-Frame-Bypass: Web Component extending IFrame to bypass X-Frame-Options: deny/sameorigin">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="menu.css"> 
-    <link rel="stylesheet" href="home.css"> 
-    <link rel="stylesheet" href="donations.css"> 
+    <link rel="stylesheet" href="cssCode/menu.css"> 
+    <link rel="stylesheet" href="cssCode/home.css"> 
+    <link rel="stylesheet" href="cssCode/donations.css"> 
+    <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
+	<script src="x-frame-bypass.js" type="module"></script>
 </head>
 <body>  
     <div class="bannerWrapper">
-        <img class="img-banner" src="banner.jpg" alt="banner"></img> 
+        <img class="img-banner" src="cssCode/banner/banner.jpg" alt="banner"></img> 
     </div>
 
     <div class="donations-body">
-        <div class="mission-statement">
-            <h1> Donations </h1>
+        <div class="Amazon-wishlist">
+            <a href="https://www.amazon.com/hz/wishlist/ls/192RVLLFGKCNL?ref_=wl_share&fbclid=IwAR2z69udFaLIM8lVNnjuF0V6g139INlxnEESLmrYrOs30aXvNrj4_lXDG9I"> 
+            <img src="cssCode/icons/amazonWishlist.png" alt="Amazon button"></a>
         </div> 
+        <div class="paypal-donation">
+            <a href="https://www.paypal.com/pools/c/8jz3F5lZXW?fbclid=IwAR3WeJS4DwMHZEvUEMIBlCY26zxTaGxvN4huRR8mZt7GIT5c3uHzYATcbD8"> 
+            <img src="cssCode/icons/paypalLogo.png" alt="paypal button"></a>
+        </div> 
+        <div class="FoxValley-donation">
+            <a href="https://store.foxvalleynutrition.com/day-one-4025?fbclid=IwAR0dMlHnA6UNz8LJUNaGIv2T8RrM2c-7usb-Jmba76cNW0q2SbeUggexTsc"> 
+            <img src="cssCode/icons/FoxValleyLogo.png" alt="paypal button"></a>
+        </div> 
+
+
+
+
+        <div class="bottom-spacer"></div>
+        <footer class="footer"> Copyright ©2020 SafeHavenWildLifeRehabilitaiton, All rights reserved. </footer>
     </div>
+
 
     <div class="menu-wrap">
         <input type="checkbox" class="toggler">

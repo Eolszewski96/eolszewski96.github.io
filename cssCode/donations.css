@@ -1,0 +1,68 @@
+/*---- whole body section ----*/
+.donations-body{
+    background-image: url("backgrounds/donationsBackground.jpg");
+    width: 100%;
+    height: inherit;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+}
+
+/*---- Amazon section ----*/
+.Amazon-wishlist{
+    display: inline-block;
+    margin-top: 25%;
+    width: 80%;
+    height: 25%;
+    background-color: rgba(125, 103, 80, 0.90);
+    text-align: center;
+    border-radius: 2%;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, .5, .5);
+}
+.Amazon-wishlist > a > img{
+    width:90%;
+    height: 80%;
+    margin-top: 5%;
+    border-radius: 2%;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, .5, .5);
+}
+
+/*---- Paypal section ----*/
+.paypal-donation{
+    display: inline-block;
+    margin-top: 10%;
+    width: 80%;
+    height: 25%;
+    background-color: rgba(125, 103, 80, 0.90);
+    text-align: center;
+    border-radius: 2%;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, .5, .5);
+}
+.paypal-donation > a > img{
+    width:90%;
+    height: 80%;
+    margin-top: 6%;
+    border-radius: 2%;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, .5, .5); 
+}
+
+/*---- FoxValley section ----*/
+.FoxValley-donation{
+    display: inline-block;
+    margin-top: 10%;
+    width: 80%;
+    height: 25%;
+    background-color: rgba(125, 103, 80, 0.90);
+    text-align: center;
+    border-radius: 2%;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, .5, .5);
+}
+.FoxValley-donation > a > img{
+    width:90%;
+    height: 80%;
+    margin-top: 6%;
+    border-radius: 2%;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, .5, .5); 
+}

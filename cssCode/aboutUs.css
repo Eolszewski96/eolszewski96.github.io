@@ -1,6 +1,6 @@
 /*---- whole body section ----*/
 .aboutUs-body{
-    background-image: url("aboutUsBackround.jpg");
+    background-image: url("backgrounds/aboutUsBackround.jpg");
     height: inherit;
     text-align: center;
     align-items: center;
