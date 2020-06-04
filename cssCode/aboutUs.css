@@ -13,7 +13,7 @@
 .mission-statement{
     display: inline-block;
     margin-top: 25%;
-    width: 90%;
+    width: 80%;
     background-color: rgba(125, 103, 80, 0.90);
     text-align: left;
     border-radius: 2%;
@@ -21,13 +21,13 @@
 }
 .mission-statement > p {
     padding:  3%;
-    font-size: 120%;
+    font-size: 115%;
    
 }
 .mission-statement > h1 {
     color: white;
     padding: 1%;
-    font-size: 150%;
+    font-size: 140%;
     text-align: center;
 }
 
@@ -38,13 +38,13 @@
     border-radius: 2%;
     background-color:  rgba(125, 103, 80, 0.90);
     margin-top: 12%;
-    width: 90%;
+    width: 80%;
     height: 60%;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, .5, .5);
 }
 .location h1{
     padding-bottom: 2%;
-    font-size: 150%;
+    font-size: 140%;
     color: white;
 }
 .location > iframe{
@@ -62,8 +62,8 @@
     border-radius: 2%;
     background-color:  rgba(125, 103, 80, 0.90);
     margin-top: 12%;
-    width: 80%;
-    height: 20%;
+    width: 70%;
+    height: 15%;
     text-align: center;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, .5, .5);
     
