@@ -28,6 +28,7 @@
 .donation-description > p {
     padding:  3%;
     font-size: 120%;
+    text-align: center;
 }
 .donation-description > h1 {
     color: white;
@@ -40,7 +41,7 @@
 .Amazon-wishlist, .paypal-donation, .FoxValley-donation{
     display: inline-block;
     margin-top: 10%;
-    width: 80%;
+    width: 70%;
     height: inherit;
     background-color: var(--background-color);
     text-align: center;
