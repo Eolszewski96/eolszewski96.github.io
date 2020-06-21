@@ -1,3 +1,8 @@
+:root{
+    --background-color: rgba(125, 103, 80, 0.90);
+    --shadow: 0px 0px 2px 2px rgba(0, 0, .5, .5);
+}
+
 /*---- whole body section ----*/
 .donations-body{
     background-image: url("backgrounds/donationsBackground.jpg");
@@ -10,59 +15,45 @@
     align-content: center;
 }
 
-/*---- Amazon section ----*/
-.Amazon-wishlist{
+/*---- donations description ----*/
+.donation-description{
     display: inline-block;
     margin-top: 25%;
-    width: 70%;
-    height: 20%;
-    background-color: rgba(125, 103, 80, 0.90);
-    text-align: center;
+    width: 80%;
+    background-color: var(--background-color);
+    text-align: left;
     border-radius: 2%;
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, .5, .5);
+    box-shadow: var(--shadow);
 }
-.Amazon-wishlist > a > img{
-    width:90%;
-    height: 80%;
-    margin-top: 5%;
-    border-radius: 2%;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, .5, .5);
+.donation-description > p {
+    padding:  3%;
+    font-size: 120%;
+}
+.donation-description > h1 {
+    color: white;
+    padding: 1%;
+    font-size: 150%;
+    text-align: center;
 }
 
-/*---- Paypal section ----*/
-.paypal-donation{
+/*---- background for divs ----*/
+.Amazon-wishlist, .paypal-donation, .FoxValley-donation{
     display: inline-block;
     margin-top: 10%;
-    width: 70%;
-    height: 20%;
-    background-color: rgba(125, 103, 80, 0.90);
+    width: 80%;
+    height: inherit;
+    background-color: var(--background-color);
     text-align: center;
     border-radius: 2%;
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, .5, .5);
-}
-.paypal-donation > a > img{
-    width:90%;
-    height: 80%;
-    margin-top: 6%;
-    border-radius: 2%;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, .5, .5); 
+    box-shadow: var(--shadow);
 }
 
-/*---- FoxValley section ----*/
-.FoxValley-donation{
-    display: inline-block;
-    margin-top: 10%;
-    width: 70%;
-    height: 20%;
-    background-color: rgba(125, 103, 80, 0.90);
-    text-align: center;
-    border-radius: 2%;
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, .5, .5);
-}
-.FoxValley-donation > a > img{
+/*---- images for links ----*/
+.Amazon-img, .Paypal-img, .FoxValley-img{
     width:90%;
-    height: 80%;
+    height: 15%;
     margin-top: 6%;
+    margin-bottom: 6%;
     border-radius: 2%;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, .5, .5); 
+    box-shadow: var(--shadow);
 }
