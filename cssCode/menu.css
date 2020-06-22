@@ -7,7 +7,7 @@ body{
     position: fixed;
     top:0;
     left:0;
-    z-index: 1;
+    z-index: 10;
     display: flex;
     align-content: center;
     text-align: center;
@@ -19,7 +19,7 @@ body{
     position: fixed;
     top:89%;
     left:80%;
-    z-index: 2;
+    z-index: 12;
     cursor: pointer;
     width: 59px;
     height: 59px;
@@ -30,7 +30,7 @@ body{
 .menu-wrap .hamburger{
     position: fixed;
     border-radius: 50%;
-    z-index: 1;
+    z-index: 10;
     top: 89%;
     left: 82%;
     width: 50px;
