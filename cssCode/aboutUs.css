@@ -22,7 +22,6 @@
 .mission-statement > p {
     padding:  1%;
     font-size: 115%;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.10);
     text-align: center;
     
    
@@ -31,7 +30,7 @@
     color: white;
     padding: 1%;
     font-size: 140%;
-    text-shadow: 2px 2px 2px rgb(0,0,0,.75);
+    text-shadow: 2px 2px 2px rgb(0,0,0,.50);
     text-align: center;
     
 }
