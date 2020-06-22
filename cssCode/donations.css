@@ -19,21 +19,23 @@
 .donation-description{
     display: inline-block;
     margin-top: 25%;
-    width: 80%;
+    width: 90%;
     background-color: var(--background-color);
     text-align: left;
     border-radius: 2%;
     box-shadow: var(--shadow);
 }
 .donation-description > p {
-    padding:  3%;
+    padding:  1%;
     font-size: 120%;
     text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.10);
 }
 .donation-description > h1 {
     color: white;
     padding: 1%;
     font-size: 150%;
+    text-shadow: 2px 2px 2px rgb(0,0,0,.75);
     text-align: center;
 }
 
@@ -41,7 +43,7 @@
 .Amazon-wishlist, .paypal-donation, .FoxValley-donation{
     display: inline-block;
     margin-top: 10%;
-    width: 70%;
+    width: 80%;
     height: inherit;
     background-color: var(--background-color);
     text-align: center;

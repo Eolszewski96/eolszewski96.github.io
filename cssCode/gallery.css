@@ -12,16 +12,25 @@
 .information-block{
     display: inline-block;
     width: 90%;
-    height: 20%;
-    margin-top: 30%;
+    height: inherit;
+    margin-top: 25%;
     background-color: rgba(125, 103, 80, 0.90);
     text-align: left;
     border-radius: 2%;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, .5, .5);
 }
+.information-block > h1 {
+    color: white;
+    padding: 1%;
+    font-size: 150%;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(0,0,0,.75);
+}
 .information-block > p {
-    padding:  3%;
+    padding:  1%;
     font-size: 120%;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.10);
 }
 
 /*---- picture sections ----*/
@@ -44,6 +53,7 @@
     margin-left: 5%;
     overflow: hidden;
     width: 90%;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 1, 0.25);
 }
 .carousel-slide{
     display: flex;
@@ -53,20 +63,22 @@
 /*---- buttons ----*/
 #prevBtn{
     position: absolute;
-    top:70%;
+    top:75%;
     z-index: 10;
-    font-size: 400%;
+    font-size: 300%;
     color: white;
-    left: 5%
+    left: 5%;
+    opacity: 70%;
+    
 }
 #nextBtn{
     position: absolute;
-    top:70%;
+    top:75%;
     z-index: 10;
-    font-size: 400%;
+    font-size: 300%;
     color: white;
-   
     right: 5%;
+    opacity: 70%;
 }
 
 
