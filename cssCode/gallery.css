@@ -8,21 +8,12 @@
     justify-content: center;
     align-content: center;
 }
-
-/*---- top seperator ----*/
-.top-seperator{
-    width: 100%;
-    height: 10%;
-    display: inline-block;
-    opacity: 0%;
-}
-
 /*---- information block ----*/
 .information-block{
     display: inline-block;
-    
     width: 90%;
-    height: inherit;
+    height: 20%;
+    margin-top: 30%;
     background-color: rgba(125, 103, 80, 0.90);
     text-align: left;
     border-radius: 2%;
@@ -34,34 +25,51 @@
 }
 
 /*---- picture sections ----*/
-.picture-area{
+.carousel-section{
     display: inline-block;
     margin-top: 10%;
     width: 90%;
     height: inherit;
+    padding-top: 5%;
+    padding-bottom: 5%;
     background-color: rgba(125, 103, 80, 0.90);
-    text-align: center;
     border-radius: 2%;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, .5, .5);
 
 }
-.picture-area > p{
-    color: white;
-    font-size: 150%;
-}
-.picture-area > img{
-    margin: 5%;
-}
-
-/*--*/
-.slider{
-    overflow: hidden;
-
-}
-.slider > figure{
+.carousel-container{
     position: relative;
-    left:0;
-    margin: 0;
-    width: 270%;
-    animation: 20s slider infinite;
+    margin-right: 8%;
+    border: 10;
+    margin-left: 10%;
+    overflow: hidden;
+}
+.carousel-slide{
+    display: flex;
+    height: 50%;
+}
+
+/*---- buttons ----*/
+#prevBtn{
+    position: absolute;
+    top:70%;
+    z-index: 10;
+    font-size: 400%;
+    color: white;
+    left: 5%
+}
+#nextBtn{
+    position: absolute;
+    top:70%;
+    z-index: 10;
+    font-size: 400%;
+    color: white;
+   
+    right: 5%;
+}
+
+
+/*---- bottom seperator ----*/
+.bottom-spacer{
+    display: inline-block;
 }

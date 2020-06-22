@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="cssCode/menu.css"> 
     <link rel="stylesheet" href="cssCode/home.css"> 
     <link rel="stylesheet" href="cssCode/gallery.css"> 
+    <script src="https://kit.fontawesome.com/fc197d3db2.js" crossorigin="anonymous"></script>
 </head>
 <body>  
     <div class="bannerWrapper">
@@ -13,32 +14,47 @@
     </div>
 
     <div class="gallery-body">
-        <div class=top-seperator>
-
-        </div>
-
         <div class="information-block">
             <p> At the Safehaven Wildlife Rehabilitation we take care of many animals.
                 Below are some pictures of the recent animals we have been taking care of. </p>
         </div>
 
+
         
-        <div class="slider">
-            <figure>
-                <img src="gallery/mink1.jpg" alt="mink1">
-                <img src="gallery/racoon.jpg" alt="racoon1">
-                <img src="gallery/babyBunnies.jpg" alt="baby bunnies">
-                <img src="gallery/weasel.png" alt="weasel">
-            </figure>
-            
-        </div>
+        <div class="carousel-section">
+            <div class="carousel-container">
+                <i class="fas fa-arrow-right" aria-hidden="true" id="nextBtn"></i>
+                <i class="fas fa-arrow-left" aria-hidden="true"  id="prevBtn"></i>
+                <div class="carousel-slide">
+                    <img src="gallery/weasel.png" id= "lastClone" alt="">
+                    <img src="gallery/mink1.jpg" alt="">
+                    <img src="gallery/racoon.jpg" alt="">
+                    <img src="gallery/weasel.png" alt="">
+                    <img src="gallery/mink1.jpg" id="firstClone" alt="">
+                </div>
+                   
+            </div>
+        </div>  
 
         
         
-        
-        
+
+
+
+
+
+
+
+
         <div class="bottom-spacer"></div>
+    </div>
+    
         <footer class="footer"> Copyright ©2020 SafeHavenWildLifeRehabilitaiton, All rights reserved. </footer>
+        
+        
+        
+        
+        
 
 
 
@@ -66,5 +82,8 @@
             </div>
         </div>
     </div>
+
+    <script src="carousel.js"></script>
+
  </body>  
 </html>
