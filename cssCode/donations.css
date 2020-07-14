@@ -1,6 +1,6 @@
 /*---- whole body section ----*/
 .donations-body{
-    background-color: rgba(53, 69, 49, 0.90);
+    background-color: rgba(53, 69, 49, 0.99);
     height: inherit;
     width: 90%;
     text-align: center;
@@ -23,6 +23,7 @@
     text-align: left;
     border-radius: 2%;
     box-shadow: var(--box-shadow);
+    padding:3%;
 }.donation-description > p {
     padding:  1%;
     font-size: 120%;
@@ -34,6 +35,12 @@
     font-size: 150%;
     text-shadow: 2px 2px 2px rgb(0,0,0,.50);
     text-align: center;
+}
+
+/*---- recent donations ----*/
+.recent-donation{
+    width: 100%;
+    box-shadow: var(--box-shadow);
 }
 
 /*---- background for divs ----*/
@@ -64,7 +71,7 @@
         display: grid;
         grid-template-areas: var(--grid-template);
         grid-gap: 100px;
-        height: 100vh;      
+        height: 100%;      
         width: 1400px;
         border-radius: 0%;
         border-top: none;
@@ -76,7 +83,7 @@
     /*---- donations left ----*/
     .donation-description{
         margin-top: 60px;
-        width: 400px;   
+        width: 500px;   
     }.donation-description > h1 {
         font-size: var(--desktop-h-size)
     }.donation-description > p {

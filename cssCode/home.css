@@ -11,7 +11,8 @@
     --div-background-color: rgba(125, 103, 80, 0.90);
     --grid-template: 'header header header header header header'
     'left left left right right right'
-    'footer footer footer footer footer footer';
+    'footer footer footer footer footer footer'
+    'bottom bottom bottom bottom bottom bottom';
     --h-font: 'Spectral', serif; 
 }
 
@@ -34,9 +35,6 @@
     height: 15%;
     opacity: 0%;
 }
-
-
-
 /*---- home info ----*/
 .home{
     height: 100%;
@@ -60,7 +58,7 @@
 .desktop-footer{
     display: none;
 }
-.bottom-spacer{
+.bottom-spacer2,.bottom-spacer1{
     display: inline-block;
     width: 100%;
     height: 2%;
@@ -86,11 +84,11 @@
         text-align: center;
         margin: auto;
         position: absolute;
-        min-width: 100vw;
+        min-width: 100%;
         height: inherit;
         background-image: url(backgrounds/random.png);
         background-position: center;
-        background-repeat: space;
+        
         background-size: 100%;
     }
     .bannerWrapper{
@@ -111,15 +109,15 @@
 
     /*---- left/right sections ----*/
     .left-section{ 
-        margin-top: -200px;
+        margin-top: -150px;
         grid-area: left;
         width: var(--desktop-rightLeft-size);
-        height: var(--desktop-rightLeft-size);
+        height: 100%;
     }.right-section{
-        margin-top: -200px;
+        margin-top: -150px;
         grid-area: right;
         width: var(--desktop-rightLeft-size);
-        height: var(--desktop-rightLeft-size);
+        height: 100%;
     }
 
     /*---- menu buttons ----*/
@@ -129,8 +127,7 @@
         margin-top: 40px;
         width: 650px;
         height: 50px;
-    }
-    .menu-button{
+    }.menu-button{
         position: relative;
         font-size: 40px;
         margin-right: 20px;
@@ -138,17 +135,31 @@
         background: none;
         border: none;
         color: white;
-    }
-    .menu-button:hover{
+    }.menu-button:hover{
         opacity: 50%;
         cursor: pointer;
     }
 
-    /*---- footer ----*/
-    .bottom-spacer, .footer{
-        display: none;
+    /*---- bottom section ----*/
+    .bottom-section{
+        grid-area: footer;
+        text-align: center;
+        width: 1200px;
+        height: 80px;
+        margin-top: 50px;
+        padding-bottom: 100px;
+        margin: auto;
+    }.bottom-spacer1{
+        grid-area: bottom;
+        width: 100%;
+        height: 1px;
+        display: inline-block;
     }
-    .desktop-footer{
+
+    /*---- footer ----*/
+    .top-spacer,.bottom-spacer2, .footer{
+        display: none;
+    }.desktop-footer{
         margin: auto;
         display: inline-block;
         background-color: rgb(125, 103, 80);

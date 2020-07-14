@@ -5,7 +5,7 @@ body{
 
 /*---- whole body section ----*/
 .aboutUs-body{
-    background-color: rgba(53, 69, 49, 0.90);
+    background-color: rgb(53, 69, 49,.99);
     height: inherit;
     width: 90%;
     text-align: center;
@@ -34,6 +34,29 @@ body{
     text-align: center; 
 }
 .mission-statement > h1 {
+    color: white;
+    padding: 1%;
+    font-size: 140%;
+    text-shadow: 2px 2px 2px rgb(0,0,0,.50);
+    text-align: center;
+    font-family: var(--h-font);
+}
+
+/*---- what we do block ----*/
+.aboutUs-block{
+    display: inline-block;
+    margin-top: 10%;
+    width: 80%;
+    background-color: rgba(125, 103, 80, 0.90);
+    text-align: left;
+    border-radius: 2%;
+    box-shadow: var(--box-shadow); 
+}.aboutUs-block > p {
+    padding:  1%;
+    font-size: 115%;
+    text-align: center; 
+}
+.aboutUs-block > h1 {
     color: white;
     padding: 1%;
     font-size: 140%;
@@ -74,7 +97,7 @@ body{
     display: inline-block;
     border-radius: 2%;
     background-color:  rgba(125, 103, 80, 0.90);
-    margin-top: 5%;
+    margin-top: 10%;
     width: 80%;
     height: 18%;
     text-align: center;
@@ -110,7 +133,7 @@ body{
         display: grid;
         grid-template-areas: var(--grid-template);
         grid-gap: 100px;
-        height: 100vh;      
+        height: 100%;      
         width: 1400px;
         border-radius: 0%;
         border-top: none;
@@ -121,51 +144,73 @@ body{
 
     /*---- about us left ----*/
     .mission-statement{
+        grid-area: left;
+        margin-top: 0px;
+        width: 400px;
+        padding: 20px;
+    }.mission-statement > p {
+        font-size: var(--desktop-p-size);    
+    }
+
+    .aboutUs-block{
+        grid-area: left;
         margin-top: 60px;
         width: 400px;
         padding: 20px;
-    }
-    .mission-statement > p {
+    }.aboutUs-block > p {
         font-size: var(--desktop-p-size);    
     }
+
     .contact-information{
         display: none;
-    }
-    .desktop-contact-information{
-        grid-area: left;
+    }.desktop-contact-information{
+        grid-area: footer;
         display: inline-block;
         background-color:  rgba(125, 103, 80, 0.90);
         border-radius: 2%;
         text-align: center;
         box-shadow: var(--box-shadow);
-        margin-top: 100px;
-        width: 400px;
-        padding: 20px;
+        margin-top: 60px;
+        width: 100%;
+        height: 150px;
+        padding-bottom: 20px;
+        
     }.desktop-contact-information >h1{
         font-size: var(--desktop-h-size);
         font-family: var(--h-font);
         color: white;
         text-shadow: 2px 2px 2px rgb(0,0,0,.75);
-        padding-bottom: 20px;
+        margin-left: -20px;
+    }.phone-link, .email-link, .facebook-link{
+        display: inline-block;
+        margin-top: 10px;
+        padding: 0px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }.phone-link >p, .email-link >p, .facebook-link >p{
+        color: white;
+        font-size: 20px;
+        margin-top: 10px;
     }
-
+    .call, .email, .facebook{
+        width: 60px;
+    }
+    .aboutUs-block > h1, .location > h1,.mission-statement > h1, .contact-information > h1{
+        margin-top: -20px;
+        font-size: var(--desktop-h-size);  
+    }
 
     /*---- about us right ----*/
     .location{
-        margin-top: 60px;
+        margin-top: 0px;
         width: 500px;
         height: 550px;
         margin-right: 30%;
         padding:20px;
-    }
-    .location > iframe{
+    }.location > iframe{
         border: none;
         width: 450px;
         height: 500px;
         box-shadow: var(--box-shadow);
-    }
-    .location > h1,.mission-statement > h1, .contact-information > h1{
-        margin-top: -20px;
-        font-size: var(--desktop-h-size);  
     }
 }
