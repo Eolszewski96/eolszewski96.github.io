@@ -1,38 +1,40 @@
 /*---- whole body section ----*/
 .gallery-body{
-    background-image: url("backgrounds/galleryBackground.jpg");
+    background-color: rgba(53, 69, 49, 0.90);
     height: inherit;
+    width: 95%;
     text-align: center;
     align-items: center;
     align-self: center;
     justify-content: center;
     align-content: center;
+    margin: auto;
+    border-radius: 1%;
+    box-shadow: var(--box-shadow);
 }
 /*---- information block ----*/
 .information-block{
     display: inline-block;
     width: 80%;
     height: inherit;
-    margin-top: 25%;
+    margin-top: 5%;
     background-color: rgba(125, 103, 80, 0.90);
     text-align: left;
     border-radius: 2%;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, .5, .5);
-}
-.information-block > h1 {
+}.information-block > h1 {
     color: white;
     padding: 1%;
     font-size: 150%;
     text-align: center;
     text-shadow: 2px 2px 2px rgb(0,0,0,.50);
-}
-.information-block > p {
+}.information-block > p {
     padding:  1%;
     font-size: 120%;
     text-align: center;
 }
 
-/*---- picture sections ----*/
+/*---- carousel section ----*/
 .carousel-section{
     display: inline-block;
     margin-top: 10%;
@@ -44,8 +46,7 @@
     border-radius: 2%;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, .5, .5);
 
-}
-.carousel-container{
+}.carousel-container{
     position: relative;
     margin-right: 8%;
     border: 10;
@@ -53,35 +54,66 @@
     overflow: hidden;
     width: 90%;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 1, 0.25);
-}
-.carousel-slide{
+}.carousel-slide{
     display: flex;
     height: 60%;
 }
 
-/*---- buttons ----*/
-#prevBtn{
+/*---- carousel buttons ----*/
+#prevBtn, #nextBtn{
     position: absolute;
     top:75%;
     z-index: 10;
     font-size: 300%;
     color: white;
-    left: 5%;
-    opacity: 70%;
-    
-}
-#nextBtn{
-    position: absolute;
-    top:75%;
-    z-index: 10;
-    font-size: 300%;
-    color: white;
-    right: 5%;
     opacity: 70%;
 }
+#prevBtn{ left:5%}
+#nextBtn{ right:5%}
+#nextBtn:hover, #prevBtn:hover{
+    opacity: 100%;
+    cursor: pointer;
+    font-size: 350%;
+}
 
+/*------ settings for not phone screens ------*/
+@media only screen and (min-width: 600px) {
+    /*---- about us main body ----*/
+    .gallery-body{
+        display: grid;
+        grid-template-areas: var(--grid-template);
+        grid-gap: 100px;
+        height: 100vh;      
+        width: 1400px;
+        border-radius: 0%;
+        border-top: none;
+        border: solid;
+        border-color: rgba(0, 0, 0);
+        border-width: 1px;
+    }
+   
+    /*---- gallery left ----*/
+    .information-block{
+        width: 440px;
+        height: 240px;
+        margin-top: 60px;
+    }.information-block > h1 {
+        font-size:  var(--desktop-h-size);
+        font-family: var(--h-font);
+    }.information-block > p {
+        font-size: var(--desktop-p-size);
+    }
 
-/*---- bottom seperator ----*/
-.bottom-spacer{
-    display: inline-block;
+    /*---- gallery right ----*/
+    .carousel-section{
+        margin-left: -100px;
+        width: 400px;
+        height: 400px;
+    }.carousel-container{
+        text-align: center;
+        margin: auto;
+        width: 350px;
+    }.carousel-slide{
+        height: 400px;
+    }
 }

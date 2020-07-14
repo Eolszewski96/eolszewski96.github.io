@@ -2,18 +2,40 @@
     margin: 0;
 }
 
+/*---- variables ----*/
+:root{
+    --desktop-h-size: 30px;
+    --desktop-rightLeft-size: 600px;
+    --desktop-p-size: 21px;
+    --box-shadow: 0px 0px 2px 2px rgba(0, 0, .5, .5);
+    --div-background-color: rgba(125, 103, 80, 0.90);
+    --grid-template: 'header header header header header header'
+    'left left left right right right'
+    'footer footer footer footer footer footer';
+    --h-font: 'Spectral', serif; 
+}
+
 /*---- top of page banner ----*/
 .bannerWrapper{
+    background-image: url("banner/banner.png");
     width:100%;
+    height: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
     position: fixed;
     z-index: 2;
-    background-color: white;
 }
-.bannerWrapper img{
+.menu-button-div{
+    display: none;
+}
+.top-spacer{
+    display: inline-block;
     width: 100%;
-    box-shadow: 0px 0px 2px 2px rgb(0, 0, .5, .5);  
-    position: fixed;
+    height: 12%;
+    opacity: 0%;
 }
+
+
 
 /*---- home info ----*/
 .home{
@@ -29,19 +51,21 @@
     height: 100%;
 }
 .home-info > img{
-    margin-left: -2%;
     margin-top: 20%;
     width: 105%;
     height: 60%;
 }
 
 /*---- footer/spacer ----*/
+.desktop-footer{
+    display: none;
+}
 .bottom-spacer{
     display: inline-block;
-    width: 80%;
-    height: 10%;
+    width: 100%;
+    height: 2%;
     margin-top: 2%;
-    background-color: rgb(0,0,0,0);
+    opacity: 0%;
 }
 .footer{
     background-color: rgba(125, 103, 80, 0.90);
@@ -54,17 +78,89 @@
     text-align: center;
 }
 
+
 /*------ settings for not phone screens ------*/
-@media only screen and (min-width: 768px) {
-    .bannerWrapper img{
-        width: 1024px;
+@media only screen and (min-width: 600px) {
+    /*---- page and banner wrapper ----*/
+    .pageWrapper{
+        text-align: center;
+        margin: auto;
+        position: absolute;
+        min-width: 100vw;
+        height: inherit;
+        background-image: url(backgrounds/random.png);
+        background-position: center;
+        background-repeat: space;
+        background-size: 100%;
     }
     .bannerWrapper{
         text-align: center;
+        margin: auto;
+        grid-area: header;
+        position: relative;
+        background-image: url(banner/desktopBanner.png);
+        background-size: auto;
+        width: 1400px;
+        height: 150px;
+        background-position-x: center; 
+        box-shadow: var(--box-shadow);
+        border: solid;
+        border-color: rgba(0, 0, 0);
+        border-width: 1px;
     }
 
-    .bodyWrapper {
-        width: 600px;
-        margin: 0 auto;
+    /*---- left/right sections ----*/
+    .left-section{ 
+        margin-top: -200px;
+        grid-area: left;
+        width: var(--desktop-rightLeft-size);
+        height: var(--desktop-rightLeft-size);
+    }.right-section{
+        margin-top: -200px;
+        grid-area: right;
+        width: var(--desktop-rightLeft-size);
+        height: var(--desktop-rightLeft-size);
+    }
+
+    /*---- menu buttons ----*/
+    .menu-button-div{
+        display: inline-block;
+        margin-left: 750px;
+        margin-top: 40px;
+        width: 650px;
+        height: 50px;
+    }
+    .menu-button{
+        position: relative;
+        font-size: 40px;
+        margin-right: 20px;
+        font-family: 'Spectral', serif;
+        background: none;
+        border: none;
+        color: white;
+    }
+    .menu-button:hover{
+        opacity: 50%;
+        cursor: pointer;
+    }
+
+    /*---- footer ----*/
+    .bottom-spacer, .footer{
+        display: none;
+    }
+    .desktop-footer{
+        margin: auto;
+        display: inline-block;
+        background-color: rgb(125, 103, 80);
+        color: black;
+        font-size: 15px;
+        width: 1400px;
+        height: 20px;
+        text-align: center;
+        box-shadow: var(--box-shadow);
+        border: solid;
+        border-top: none;
+        border-color: rgba(0, 0, 0);
+        border-width: 1px;
     }
 }

@@ -5,47 +5,80 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="cssCode/menu.css"> 
     <link rel="stylesheet" href="cssCode/home.css"> 
-    <link rel="stylesheet" href="cssCode/gallery.css"> 
+    <link rel="stylesheet" href="cssCode/gallery.css">
+    <link rel="stylesheet" href="cssCode/aboutUs.css"> 
     <script src="https://kit.fontawesome.com/fc197d3db2.js" crossorigin="anonymous"></script>
 </head>
 <body>  
-    <div class="bannerWrapper">
-        <img class="img-banner" src="cssCode/banner/banner.png" alt="banner"></img> 
-    </div>
-
-    <div class="gallery-body">
-        <div class="information-block">
-            <h1>Gallery</h1>
-            <p> At the Safehaven Wildlife Rehabilitation we take care of many animals.
-                Below are some pictures of the recent animals we have been taking care of. 
-            </p>
-        </div>
-        <div class="carousel-section">
-            <div class="carousel-container">
-                <i class="fas fa-arrow-right" aria-hidden="true" id="nextBtn"></i>
-                <i class="fas fa-arrow-left" aria-hidden="true"  id="prevBtn"></i>
-                <div class="carousel-slide">
-                    <img src="gallery/weasel1.png" id= "lastClone">
-                    <img src="gallery/racoon1.jpg">
-                    <img src="gallery/possum1.jpg">
-                    <img src="gallery/weasel1.png">
-                    <img src="gallery/duck1.jpg">
-                    <img src="gallery/rabbits1.jpg">
-                    <img src="gallery/squirrel1.jpg">
-                    <img src="gallery/mink1.jpg">
-                    <img src="gallery/racoon2.jpg">
-                    <img src="gallery/possum2.jpg">
-                    <img src="gallery/rabbits2.jpg">
-                    <img src="gallery/squirrel2.jpg">
-                    <img src="gallery/weasel1.png">
-                    <img src="gallery/racoon1.jpg" id="firstClone">
-                </div>
-                   
+    <div class="pageWrapper"> 
+        <div class="bannerWrapper">
+            <div class="menu-button-div">
+                <a href="aboutUs.html"><button class="menu-button">About Us</button></a>
+                <a href="gallery.html"><button class="menu-button">Gallery</button></a>
+                <a href="donations.html"><button class="menu-button">Donations</button></a>
             </div>
-        </div>  
+        </div>
+        <div class="top-spacer"></div>
+        <div class="gallery-body">
+            <div class="left-section">
+                <div class="information-block">
+                    <h1>Gallery</h1>
+                    <p> At the Safehaven Wildlife Rehabilitation we take care of many animals.
+                        Here are some pictures of the recent animals we have been taking care of. 
+                        Don't forget to checkout our facebook page for more pictures, videos, and updates
+                        of our animals! 
+                    </p>
+                </div>
+
+                <div class="desktop-contact-information">
+                    <h1> Contact Us </h1>
+                    <a class="phone-link" href="tel:17792274152"> <img class="call" src="cssCode/icons/phone.png" alt="phone-img"></a>  
+                    <a class="email-link" href="mailto: safehavenwildliferrr@gmail.com"> <img class="email" src="cssCode/icons/email.png" alt="mail-icon"></a>
+                    <a class="facebook-link" href="https://www.facebook.com/safehavenwildliferehab"> <img class="facebook" src="cssCode/icons/FacebookLogo.png" alt="facebook-icon"></a> 
+                </div>
+
+            </div>
+            <div class="right-section">
+                <div class="carousel-section">
+                    <div class="carousel-container">
+                        <i class="fas fa-arrow-right" aria-hidden="true" id="nextBtn"></i>
+                        <i class="fas fa-arrow-left" aria-hidden="true"  id="prevBtn"></i>
+                        <div class="carousel-slide">
+                            <img src="gallery/weasel1.png" id= "lastClone">
+                            <img src="gallery/racoon1.jpg">
+                            <img src="gallery/possum1.jpg">
+                            <img src="gallery/weasel1.png">
+                            <img src="gallery/duck1.jpg">
+                            <img src="gallery/rabbits1.jpg">
+                            <img src="gallery/squirrel1.jpg">
+                            <img src="gallery/mink1.jpg">
+                            <img src="gallery/racoon2.jpg">
+                            <img src="gallery/possum2.jpg">
+                            <img src="gallery/rabbits2.jpg">
+                            <img src="gallery/squirrel2.jpg">
+                            <img src="gallery/weasel1.png">
+                            <img src="gallery/racoon1.jpg" id="firstClone">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="contact-information">
+                    <h1> Contact Us </h1>
+                    <a class="phone-link" href="tel:17792274152"> <img class="call" src="cssCode/icons/phone.png" alt="phone-img"></a>  
+                    <a class="email-link" href="mailto: safehavenwildliferrr@gmail.com"> <img class="email" src="cssCode/icons/email.png" alt="mail-icon"></a>
+                    <a class="facebook-link" href="https://www.facebook.com/safehavenwildliferehab"> <img class="facebook" src="cssCode/icons/FacebookLogo.png" alt="facebook-icon"></a> 
+                </div>
+            </div>
+            <div class="bottom-spacer"></div>
+            
+        </div>
         <div class="bottom-spacer"></div>
-    </div>
         <footer class="footer"> Copyright ©2020 SafeHavenWildLifeRehabilitaiton, All rights reserved. </footer>
+        <footer class="desktop-footer"> Copyright ©2020 SafeHavenWildLifeRehabilitaiton, All rights reserved.</footer>
+    </div> 
+
+
+    
     <div class="menu-wrap">
         <input type="checkbox" class="toggler">
         <div class= hamburger><div></div></div>
