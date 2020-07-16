@@ -66,7 +66,7 @@
     opacity: 0%;
 }
 .footer{
-    background-color: rgba(125, 103, 80, 0.90);
+    background-color: rgba(125, 103, 80);
     color: black;
     font-size: 75%;
     padding-left: 1%;
@@ -85,7 +85,8 @@
         margin: auto;
         position: absolute;
         min-width: 100%;
-        height: inherit;
+        min-height: 100vh;
+        max-height: inherit;
         background-image: url(backgrounds/random.png);
         background-position: center;
         
@@ -135,9 +136,12 @@
         background: none;
         border: none;
         color: white;
+        outline: none;
     }.menu-button:hover{
         opacity: 50%;
         cursor: pointer;
+        font-size:42px;
+        text-decoration: underline;
     }
 
     /*---- bottom section ----*/

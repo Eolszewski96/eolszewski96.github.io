@@ -1,6 +1,6 @@
 /*---- whole body section ----*/
 .gallery-body{
-    background-color: rgba(53, 69, 49, 0.99);
+    background-color: rgba(53, 69, 49, 0.90);
     height: inherit;
     width: 90%;
     text-align: center;
@@ -28,6 +28,7 @@
     font-size: 150%;
     text-align: center;
     text-shadow: 2px 2px 2px rgb(0,0,0,.50);
+    font-family: var(--h-font);;
 }.information-block > p {
     padding:  1%;
     font-size: 120%;
@@ -51,9 +52,13 @@
     font-size: 150%;
     text-align: center;
     text-shadow: 2px 2px 2px rgb(0,0,0,.50);
+    font-family: var(--h-font);
 }.reviews{
     display: inline-block;
     width: 100%; 
+    padding-top: 5%;
+}
+.reviews2{
     padding-top: 5%;
 }
 
@@ -142,20 +147,33 @@
         display: inline-block;
         width: 100%; 
         padding-top: 10px;
+        padding-left: 25px;
     }
-    
+    .reviews2{
+        display: inline-block;
+        width: 100%; 
+        padding-top: 10px;
+        margin-left: 49px;
+    }
+   
 
     /*---- gallery right ----*/
     .carousel-section{
-        margin-left: -100px;
-        width: 400px;
-        height: 400px;
         margin-top: 0px;
+        width: 600px;
+        height: 600px;
+        margin-left: -30px;
     }.carousel-container{
-        text-align: center;
-        margin: auto;
-        width: 350px;
+        margin-left: 50px;
+        width: 500px;
     }.carousel-slide{
-        height: 400px;
+        display: flex;
+        flex-direction: row;
+        height: 600px;
     }
+    .carousel-slide > img{
+        flex: 0 0 600px;
+    }
+
+  
 }

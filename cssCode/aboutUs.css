@@ -5,7 +5,7 @@ body{
 
 /*---- whole body section ----*/
 .aboutUs-body{
-    background-color: rgb(53, 69, 49,.99);
+    background-color: rgb(53, 69, 49,.90);
     height: inherit;
     width: 90%;
     text-align: center;
@@ -118,7 +118,8 @@ body{
     box-shadow: var(--box-shadow);
 }
 .call:hover, .email:hover, .facebook:hover{
-    opacity: 75%;
+    opacity: 50%;
+    width: 61px;
 }
 
 

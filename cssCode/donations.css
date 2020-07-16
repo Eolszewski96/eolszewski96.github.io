@@ -1,6 +1,6 @@
 /*---- whole body section ----*/
 .donations-body{
-    background-color: rgba(53, 69, 49, 0.99);
+    background-color: rgba(53, 69, 49, 0.90);
     height: inherit;
     width: 90%;
     text-align: center;
@@ -32,9 +32,10 @@
 }.donation-description > h1 {
     color: white;
     padding: 1%;
-    font-size: 150%;
+    font-size: 140%;
     text-shadow: 2px 2px 2px rgb(0,0,0,.50);
     text-align: center;
+    font-family: var(--h-font);
 }
 
 /*---- recent donations ----*/
@@ -82,8 +83,9 @@
 
     /*---- donations left ----*/
     .donation-description{
-        margin-top: 60px;
-        width: 500px;   
+        margin-top: 0px;
+        width: 500px;  
+        margin-bottom: 50px; 
     }.donation-description > h1 {
         font-size: var(--desktop-h-size)
     }.donation-description > p {
@@ -92,9 +94,10 @@
 
     /*---- donations right ----*/
     .Amazon-wishlist, .paypal-donation, .FoxValley-donation{
-        margin-top: 10%;
+        margin-top: 0px;
         width: 450px;
-        height: 200px;  
+        height: 200px; 
+        margin-bottom: 50px; 
     }
     .Amazon-img, .Paypal-img, .FoxValley-img{
         width:400px;
