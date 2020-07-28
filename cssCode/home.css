@@ -99,7 +99,7 @@
         position: relative;
         background-image: url(banner/desktopBanner.png);
         background-size: auto;
-        width: 1400px;
+        width: 1500px;
         height: 150px;
         background-position-x: center; 
         box-shadow: var(--box-shadow);
@@ -124,13 +124,15 @@
     /*---- menu buttons ----*/
     .menu-button-div{
         display: inline-block;
-        margin-left: 750px;
+        margin-left: 650px;
         margin-top: 40px;
-        width: 650px;
+        width: 800px;
         height: 50px;
+        
+       
     }.menu-button{
         position: relative;
-        font-size: 40px;
+        font-size: 33px;
         margin-right: 20px;
         font-family: 'Spectral', serif;
         background: none;
@@ -140,7 +142,7 @@
     }.menu-button:hover{
         opacity: 50%;
         cursor: pointer;
-        font-size:42px;
+        font-size:34px;
         text-decoration: underline;
     }
 
@@ -169,7 +171,7 @@
         background-color: rgb(125, 103, 80);
         color: black;
         font-size: 15px;
-        width: 1400px;
+        width: 1500px;
         height: 20px;
         text-align: center;
         box-shadow: var(--box-shadow);
