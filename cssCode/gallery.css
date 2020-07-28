@@ -113,7 +113,7 @@
         grid-template-areas: var(--grid-template);
         grid-gap: 100px;
         min-height: 100vh;
-        height: 100%;      
+        max-height: inherit;      
         width: 1500px;
         border-radius: 0%;
         border-top: none;
