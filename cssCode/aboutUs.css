@@ -137,7 +137,6 @@ body{
     width: 61px;
 }
 
-
 /*------ settings for not phone screens ------*/
 @media only screen and (min-width: 600px) {
    body{
@@ -150,7 +149,7 @@ body{
         grid-template-areas: var(--grid-template);
         grid-gap: 100px;
         min-height: 100vh;
-        height: 100%;      
+        max-height: inherit;    
         width: 1500px;
         border-radius: 0%;
         border-top: none;
@@ -180,7 +179,7 @@ body{
 
     .aboutUs-block-desktop{
         display: inline-block;
-        margin-top: 10px;
+        margin-top: 0px;
         width: 500px;
         padding: 20px;
         background-color: rgba(125, 103, 80, 0.90);
