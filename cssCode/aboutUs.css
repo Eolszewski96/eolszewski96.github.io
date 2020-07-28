@@ -130,7 +130,7 @@ body{
 .call, .email, .facebook{
     border-radius: 101%;
     box-shadow: var(--box-shadow);
-    
+    width: 15%;
 }
 .call:hover, .email:hover, .facebook:hover{
     opacity: 50%;
