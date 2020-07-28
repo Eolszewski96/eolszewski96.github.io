@@ -9,7 +9,7 @@
     justify-content: center;
     align-content: center;
     margin: auto;
-    border-radius: 1%;
+    border-radius: 5px;
     box-shadow: var(--box-shadow);
 }
 /*---- information block ----*/
@@ -20,7 +20,7 @@
     margin-top: 5%;
     background-color: var(--div-background-color);
     text-align: left;
-    border-radius: 2%;
+    border-radius: 5px;
     box-shadow: var(--box-shadow);
 }.information-block > h1 {
     color: white;
@@ -43,7 +43,7 @@
     margin-top: 5%;
     background-color: var(--div-background-color);
     text-align: center;
-    border-radius: 2%;
+    border-radius: 5px;
     box-shadow: var(--box-shadow);
     padding: 5%;
 }.review-block > h1{
@@ -72,7 +72,7 @@
     padding-top: 5%;
     padding-bottom: 5%;
     background-color: rgba(125, 103, 80, 0.90);
-    border-radius: 2%;
+    border-radius: 5px;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, .5, .5);
 
 }.carousel-container{
@@ -112,8 +112,9 @@
         display: grid;
         grid-template-areas: var(--grid-template);
         grid-gap: 100px;
+        min-height: 100vh;
         height: 100%;      
-        width: 1400px;
+        width: 1500px;
         border-radius: 0%;
         border-top: none;
         border: solid;

@@ -21,14 +21,14 @@
     width: 80%;
     background-color: var(--div-background-color);
     text-align: left;
-    border-radius: 2%;
+    border-radius: 5px;
     box-shadow: var(--box-shadow);
     padding:3%;
 }.donation-description > p {
     padding:  1%;
     font-size: 120%;
     text-align: center;
-    padding-bottom: 2%;
+    padding-bottom: 5px;
 }.donation-description > h1 {
     color: white;
     padding: 1%;
@@ -52,7 +52,7 @@
     height: inherit;
     background-color: var(--div-background-color);
     text-align: center;
-    border-radius: 2%;
+    border-radius: 5px;
     box-shadow: var(--box-shadow);
 }
 
@@ -72,8 +72,9 @@
         display: grid;
         grid-template-areas: var(--grid-template);
         grid-gap: 100px;
+        min-height: 100vh;;
         height: 100%;      
-        width: 1400px;
+        width: 1500px;
         border-radius: 0%;
         border-top: none;
         border: solid;
